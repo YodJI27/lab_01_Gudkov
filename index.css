@@ -1,0 +1,33 @@
+.myClass
+{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border-radius: 50px;
+    animation: myClass 10s infinite linear;
+}
+.page {
+    width: 720px;
+    height: 300px;
+    margin: 100px auto;
+    border: 2px solid black;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes myClass {
+    0% {
+        transform: translateX(-260px) translateY(-50px) rotate(0deg);
+        background: red;
+    }
+    50% {
+        transform: translateX(260px) translateY(50px) rotate(180deg);
+        background: green;
+    }
+    100% {
+        transform: translateX(-260px) translateY(-50px) rotate(360deg);
+        background: blue;
+    }
+}
